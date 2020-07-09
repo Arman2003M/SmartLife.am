@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="icon" href="https://images.cdn3.stockunlimited.net/preview1300/online-shopping_1242833.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <title>Online Shop</title>
     <style>
     	
@@ -38,6 +39,9 @@
 }
 .price{
 	font-size: 40px;
+}
+.asus{
+  text-align: right;
 }
     </style>
   </head>
@@ -76,7 +80,7 @@
           <div class="row d-flex justify-content-between bg-light text-dark">
             <div class="col-md-3 col-6 d-block my-2 ">
               <a href="cart.html"><img src="https://toppng.com/public/uploads/preview/shopping-cart-png-image-shopping-cart-icon-sv-11562865326ta92uix1ak.png" alt="" 
-           	width="50" height="50"></a>
+            width="50" height="50"></a>
             </div>
            
             <div class="col-md-2 col-6 d-inline ">
@@ -143,7 +147,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">KITCHEN APPLIANCES </a>
                         <a class="dropdown-item" href="#">HOME APPLIANCES</a>
-                        <a class="dropdown-item" href="#">AUDIO & VIDEO </a> 
+                        <a class="dropdown-item" href="#">AUDIO & VIDEO </a>
         </div>
       </li>
 
@@ -173,233 +177,320 @@
 
 
 
+
+
+
+
+
+
+
+<div class="mejtex">
+
+   <div class="container1">
+    <h2 class="phone">My Orders</h2>
+    <div class="row">
+        <div class="col-sm-12 ">
+          
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center ">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://image.winudf.com/v2/image1/dGhlbWVpZnkuaHVhd2VpcDMwcHJvLnAzMC5wNDAucDQwcHJvLnAzMHByby5wMzBsaXRlLnAzMHdhbGxzLmxhdW5jaGVyLnRoZW1lX3NjcmVlbl8wXzE1NTY0ODc4OTdfMDMy/screen-0.jpg?fakeurl=1&type=.jpg" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">p30 pro</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Huawei</a></h5>
+                                <span>Status: </span><span class="text-success"><strong>In Stock</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>$500</strong></td>
+                        <td class="col-sm-1 col-md-1 d-none d-sm-block text-center"><strong>$1000</strong></td>
+                        <td class="col-sm-1 col-md-1 ">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/m/r/mref2rua_1_2.jpg" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">MacBook Air</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Apple</a></h5>
+                                <span>Status: </span><span class="text-warning"><strong>Leaves warehouse in 2 - 3 weeks</strong></span>
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="1">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>$2000</strong></td>
+                        <td class="col-md-1 d-none d-sm-block text-center"><strong>$2000</strong></td>
+                        <td class="col-md-1 ">
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove"></span> Remove
+                        </button></td>
+                    </tr>
+                     
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+ <div class="container1">
+    <h2 class="phone">Wishlist</h2>
+    <div class="row">
+        <div class="col-sm-12 ">
+          
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th class="text-center">Price</th>
+                        <th class="text-center ">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col-sm-8 col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://lh3.googleusercontent.com/OSwwB2VkhTPDOgyah0bx9F72U3nr3ni832BmfqsK5hA7KDnWseW8Bm6g4plFdgiLCec=s200" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">Galaxy s20 ultra</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Samsung</a></h5>
+                                
+                            </div>
+                        </div></td>
+                        <td class="col-sm-1 col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="2">
+                        </td>
+                        <td class="col-sm-1 col-md-1 text-center"><strong>$1000</strong></td>
+                        <td class="col-sm-1 col-md-1 d-none d-sm-block text-center"><strong>$2000</strong></td>
+                        <td class="col-sm-1 col-md-1">
+                        <button type="button" class="btn btn-success">
+                            <span class="glyphicon glyphicon-remove"></span> Buy
+                        </button></td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img class="media-object" src="https://img.mvideo.ru/Pdb/30045712b.jpg" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="#">TUF Gaming FX505DY</a></h4>
+                                <h5 class="media-heading"> by <a href="#">Asus</a></h5>
+                                
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="email" class="form-control" id="exampleInputEmail1" value="1">
+                        </td>
+                        <td class="col-md-1 text-center"><strong>$2500</strong></td>
+                        <td class="col-md-1 d-none d-sm-block text-center"><strong>$2500</strong></td>
+                        <td class="col-md-1">
+                        <button type="button" class="btn btn-success">
+                            <span class="glyphicon glyphicon-remove"></span> Buy
+                        </button></td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
 <div>
+  <h2 class="phone">Rewiews</h2>
+  <div class="table-responsive d-none d-sm-block">
+  <!--Table-->
+  <table class="table table-striped">
 
+    <!--Table head-->
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Product name</th>
+        <th >Brend</th>
+        <th >Shipping address</th>
+        <th>Rewiew</th>
+        
+        <th>Price</th>
+      </tr>
+    </thead>
+    <!--Table head-->
+
+    <!--Table body-->
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>P30 pro</td>
+        <td>Huawei</td>
+        <td>Republic Square,  0010 Yerevan, Republic of Armenia </td>
+        <td class="text-warning">Phone is very nice, accurate to description</td>
+        <td>$500</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>MackBook Air</td>
+        <td>Apple</td>
+        <td>Republic Square,  0010 Yerevan, Republic of Armenia</td>
+        <td class="text-warning">Very cool laptop! Delivery 2 months and 1 week</td>
+        <td>$2000</td>
+      </tr>
+     
+    </tbody>
+    <!--Table body-->
+  </table>
+  <!--Table-->
+</div>
+
+</div>
+
+
+
+
+<div>
+  <h2 class="text-center phone">You may also like</h2>
+
+  <div class="card-deck">
+<div class="row">
+  <!-- Card -->
+  <div class=" col-12 col-sm-6 col-md-3 ">
+       <div class="card  mb-4">
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/n/e/ne-0012249.jpg"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+
+    <!--Card content-->
+    <div class="card-body">
+      <!--Title-->
+      <h4 class="card-title">Lenovo ThinkPad E490</h4>
+      <!--Text-->
+      <p class="card-text">Lenovo ThinkPad E490 14" (1920x1080) / Intel Core i5-8265U (6M Cache, 1.6GHz up to 3.9GHz) / 8GB RAM / 1TB HDD / Intel UHD Graphics 620 / No ODD / Bluetooth / WebCam / Wi-Fi / 2.2Kg / Black / DOS</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+     </div>
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class="col-12 col-sm-6 col-md-3">
+    <div class="card  mb-4">
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/3/5/3590-7582.jpg"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Dell Vostro 3590</h4>
+      <!--Text-->
+      <p class="card-text">Dell Vostro 3590 15.6"(1920x1080) / Intel Core i5-10210U (6M Cache, 1.60 GHz up to 4.10 GHz) / 8GB RAM / 256GB SSD / Intel UHD Graphics / No ODD / Bluetooth / WebCam / Wi-Fi / 1.99Kg / Black / Windows 10</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+     </div>
+  </div>
+  <!-- Card -->
+
+  <!-- Card -->
+  <div class=" col-12 col-sm-6 col-md-3 ">
+       <div class="card mb-4">
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/m/r/mref2rua_1_2.jpg"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Apple MacBook Air</h4>
+      <!--Text-->
+      <p class="card-text">Apple MacBook Air 13.3"(2560×1600) / Intel Core i3-1000NG4(4M Cache, up to 3.20 GHz) / 8GB RAM / 256GB SSD / Intel Iris Plus Graphics / No ODD / Bluetooth / WebCam / Wi-Fi / 1.3Kg / Gold / Mac OS X</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+     </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-3 ">
+       <div class="card mb-4">
+    <!--Card image-->
+    <div class="view overlay">
+      <img class="card-img-top" src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/9/0/90nr01a2-m03530.jpg"
+        alt="Card image cap">
+      <a href="#!">
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+
+    <!--Card content-->
+    <div class="card-body">
+
+      <!--Title-->
+      <h4 class="card-title">Asus TUF Gaming</h4>
+      <!--Text-->
+      <p class="card-text">Asus TUF Gaming FX505DY-BQ103T 15.6"(1920×1080)IPS / AMD Ryzen 5 3550H (4M Cache, 2.1GHz up to 3.7GHz) / 6GB RAM / 512GB SSD / AMD Radeon RX 560X 4GB / No ODD / Bluetooth / WebCam / Wi-Fi / 2.2Kg / Black / Windows 10</p>
+      <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+      <button type="button" class="btn btn-light-blue btn-md">Read more</button>
+
+    </div>
+      </div>
+  </div>
+  <!-- Card -->
+
+ </div>
+</div>
+<!-- Card deck -->
+
+</div>
+
+
+</div>
+</div>
 
    
-<div class="row">
-   <div class="col-12 col-md-8">
-      <nav aria-label="breadcrumb" >
-         <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Computers</a></li>
-              <li class="breadcrumb-item active" aria-current="page">NOTEBOOKS & ULTRABOOKS</li>
-         </ol>
-      </nav>
-   </div>
-<div class="col-auto d-none d-md-block sort">Sort By:</div>
-<div class="col-md-2 col-2 d-none d-md-block btn-lg" >
-	
-               <select name="languages" class="custom-select border-danger bg-outline-danger text-dark">
-                      <option >Price</option>
-                      <option >New</option>
-                      <option >Brend</option>
-                      <option >Name</option>
-                      
-                      
-               </select>
-</div>
 
-   
-</div>
-
-
-
-
-<div class="row">
-	<div class="col-12 col-md-3">
-		<button type="button" class="btn btn-link text-decoration-none d-block" data-toggle="collapse" data-target="#demo"><p class="filtre">Select Brand Name</p></button>
-  <div id="demo" class="collapse">
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck1">
-  <label class="custom-control-label" for="customCheck1">Apple</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck2">
-  <label class="custom-control-label" for="customCheck2">Lenovo</label>
-</div>
-<div class="custom-control custom-checkbox">
-  <input type="checkbox" class="custom-control-input" id="customCheck3">
-  <label class="custom-control-label" for="customCheck3">Asus</label>
-</div>
-  </div>
-
-
-  <button type="button" class="btn btn-link text-decoration-none d-block" data-toggle="collapse" data-target="#demo1"><p class="filtre">Select CPU Size</p></button>
-  <div id="demo1" class="collapse">
-          <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios4">
-    4GB
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios5" value="option2">
-  <label class="form-check-label" for="exampleRadios5">
-    8GB
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios6" value="option2">
-  <label class="form-check-label" for="exampleRadios6">
-    16GB
-  </label>
-</div>
-  </div>
-
-
-  <button type="button" class="btn btn-link text-decoration-none d-block" data-toggle="collapse" data-target="#demo2"><p class="filtre">Accessories</p></button>
-  <div id="demo2" class="collapse">
-          <div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Mouse</label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch2">
-  <label class="custom-control-label" for="customSwitch2">Camera </label>
-</div>
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch3">
-  <label class="custom-control-label" for="customSwitch3">Lapdesk </label>
-</div>
-  </div>
-
-
-
-
-
-</div>
-
-
-
-
-
-
-<div class="col-12 col-md-9">
-
-<div class="card mb-3" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/9/0/90nr01a2-m03530.jpg" class="card-img mw-90" alt="Max-width 90%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="product.html"> Asus TUF Gaming</a></h5>
-        <div class="row"> <div class="d-none d-md-block"><p class="card-text">Acer Nitro 5 AN515-43-R45P 15.6"(1920×1080)IPS / AMD Ryzen 5 3550H (4M Cache, 2.1GHz up to 3.7GHz) / 8GB RAM / 256GB SSD / NVIDIA GEFORCE GTX 1650 4GB / No ODD / Bluetooth / WebCam / Wi-Fi / 2.30Kg / Black / No OS</p></div></div>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <p class="price">2599$</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/m/r/mref2rua_1_2.jpg" class="card-img mw-90" alt="Max-width 90%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="product.html"> Apple MacBook Air</a> </h5>
-
-        <div class="row"> <div class="d-none d-md-block"><p class="card-text">Apple MacBook Air 13.3"(2560×1600) / Intel Core i3-1000NG4(4M Cache, up to 3.20 GHz) / 8GB RAM / 256GB SSD / Intel Iris Plus Graphics / No ODD / Bluetooth / WebCam / Wi-Fi / 1.3Kg / Gold / Mac OS X</p></div></div>
-
-      
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <p class="price">1999$</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/3/5/3590-7582.jpg" class="card-img mw-90" alt="Max-width 90%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="product.html"> Dell Vostro 3590</a></h5>
-
-        <div class="row"> <div class="d-none d-md-block"><p class="card-text">Dell Vostro 3590 15.6"(1920x1080) / Intel Core i5-10210U (6M Cache, 1.60 GHz up to 4.10 GHz) / 8GB RAM / 256GB SSD / Intel UHD Graphics / No ODD / Bluetooth / WebCam / Wi-Fi / 1.99Kg / Black / Windows 10</div></div>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <p class="price">999$</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/9/0/90nr01a2-m03530.jpg" class="card-img mw-90" alt="Max-width 90%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="product.html"> Asus TUF Gaming</a></h5>
-        <div class="row"> <div class="d-none d-md-block"><p class="card-text">Acer Nitro 5 AN515-43-R45P 15.6"(1920×1080)IPS / AMD Ryzen 5 3550H (4M Cache, 2.1GHz up to 3.7GHz) / 8GB RAM / 256GB SSD / NVIDIA GEFORCE GTX 1650 4GB / No ODD / Bluetooth / WebCam / Wi-Fi / 2.30Kg / Black / No OS</p></div></div>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <p class="price">2599$</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/m/r/mref2rua_1_2.jpg" class="card-img mw-90" alt="Max-width 90%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="product.html"> Apple MacBook Air</a> </h5>
-
-        <div class="row"> <div class="d-none d-md-block"><p class="card-text">Apple MacBook Air 13.3"(2560×1600) / Intel Core i3-1000NG4(4M Cache, up to 3.20 GHz) / 8GB RAM / 256GB SSD / Intel Iris Plus Graphics / No ODD / Bluetooth / WebCam / Wi-Fi / 1.3Kg / Gold / Mac OS X</p></div></div>
-
-      
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <p class="price">1999$</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card mb-3" >
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="https://static.nout.am/media/catalog/product/cache/1/thumbnail/800x/17f82f742ffe127f42dca9de82fb58b1/3/5/3590-7582.jpg" class="card-img mw-90" alt="Max-width 90%">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title"><a href="product.html"> Dell Vostro 3590</a></h5>
-
-        <div class="row"> <div class="d-none d-md-block"><p class="card-text">Dell Vostro 3590 15.6"(1920x1080) / Intel Core i5-10210U (6M Cache, 1.60 GHz up to 4.10 GHz) / 8GB RAM / 256GB SSD / Intel UHD Graphics / No ODD / Bluetooth / WebCam / Wi-Fi / 1.99Kg / Black / Windows 10</div></div>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        <p class="price">999$</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-	</div>
-
-	
 </div>
 
 
@@ -569,9 +660,9 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   </body>
 </html>
